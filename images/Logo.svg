@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="82px" height="82px" viewBox="0 0 82 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-2" sketch:type="MSArtboardGroup" transform="translate(-104.000000, -20.000000)" stroke="#062E42">
+            <g id="Logo-2" sketch:type="MSLayerGroup" transform="translate(46.000000, 26.000000)">
+                <g id="Group" transform="translate(64.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <polygon id="Triangle-2" stroke-width="1.5" points="12.7702703 20.0789498 52.5 49.9210502 15.6081081 49.9210502 "></polygon>
+                    <polygon id="Triangle-2" stroke-width="1.5" transform="translate(37.364865, 35.000000) scale(-1, 1) translate(-37.364865, -35.000000) " points="17.5 20.0789498 57.2297297 49.9210502 20.3378378 49.9210502 "></polygon>
+                    <circle id="Oval-60" stroke-width="1.5" cx="35" cy="35" r="35"></circle>
+                    <polygon id="Triangle-1" stroke-width="1.5" points="35 24.3805097 53.4459459 49.9210502 16.5540541 49.9210502 "></polygon>
+                    <rect id="Rectangle-201" fill="#062E42" x="15.1351351" y="51.5540541" width="39.7297297" height="0.945945946"></rect>
+                    <rect id="Rectangle-202" fill="#062E42" x="15.1351351" y="52.972973" width="39.7297297" height="0.945945946"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

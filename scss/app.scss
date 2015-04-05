@@ -1,0 +1,212 @@
+@import url("http://fonts.googleapis.com/css?family=Raleway:100");
+
+//@import "saffron/saffron";
+@import "animate/animate.scss";
+$baseColor: gray;
+$formcolor: #4caf50;
+$highlight: #2ecc71;
+$customred: #f25555;
+$yolk: #EEEADE;
+
+
+@mixin titlefont {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.5em;
+    font-weight: 200;
+
+    color: $customred;
+}
+
+@mixin logofont {
+    font-family: "Raleway", sans-serif;
+    font-size: 3em;
+    font-weight: 200;
+
+    color: $baseColor;
+}
+
+.logotextx {
+    @include zoomInUp($count: 1, $delay: .2s, $function: easeInOutQuint, $duration: 1s);
+}
+
+.headtexty {
+    @include fadeIn($count: 1, $delay: .3s, $function: ease, $duration: 5s);
+}
+
+@mixin button {
+    padding: 10px;
+    color: $customred;
+
+    border: 1px solid $customred;
+    background: transparent;
+
+    @include fadeIn($count: 1, $delay: .5s, $function: ease, $duration: 15s);
+    &:hover {
+        border: none;
+        background-color: $customred;
+    }
+}
+
+.maintitle {
+    @include titlefont;
+}
+
+@mixin modalfonts {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+
+    color: white;
+}
+
+.custom-button-class {
+    @include button;
+}
+
+@mixin subTitle {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+
+    color: $baseColor;
+}
+
+@mixin parafont {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9em;
+    font-weight: 100;
+
+    text-align: justify;
+    // color: darken($baseColor, 20%);
+
+    color: $baseColor;
+}
+
+$sectionheight: 850px;
+
+@mixin section($baseColor) {
+    width: 100%;
+    height: $sectionheight;
+
+    background-color: $baseColor;
+}
+
+#hero {
+    
+    // background-image: url(../images/hero.jpg);
+	background-color: lighten($yolk,8%);
+    // @include section($baseColor);
+    #logo {
+        color: $baseColor;
+
+        @extend #logotitle;
+    }
+    #logotitle {
+        position: relative;
+        top: 35%;
+
+        text-align: center;
+        vertical-align: center;
+
+        @include logofont;
+    }
+    h2 {
+        @extend #logotitle;
+        @include subTitle;
+    }
+    button {
+        position: relative;
+        // vertical-align: center;
+        top: 42%;
+        // background: #FF0430;
+        // left: 46%;
+
+        display: block;
+
+        vertical-align: center;
+    }
+}
+#downnav {
+    position: relative;
+    top: 50%;
+
+    opacity: .9;
+
+    @include fadeIn($count: 1, $delay: .15s, $function: ease, $duration: 30s);
+}
+
+.navwrap{
+	border-bottom: 1px solid $yolk;
+// 	-webkit-box-shadow: 6px 2px 1px 3px rgba(0,0,0,0.75);
+// -moz-box-shadow: 6px 2px 1px 3px rgba(0,0,0,0.75);
+// box-shadow: 6px 2px 1px 3px rgba(0,0,0,0.75);
+}
+
+#modaltitle {
+    font-size: 1.7em;
+
+    @include modalfonts;
+}
+
+.form {
+    background-color: $formcolor;
+
+    @include modalfonts;
+}
+
+#about {
+    #care {
+        height: $sectionheight;
+
+        background: lighten($yolk, 15%);
+        #binoculars {
+            position: relative;
+            top: 25%;
+
+            display: block;
+            #bino_img {
+                vertical-align: center;
+            }
+        }
+    }
+    #activity {
+        @extend #care;
+        #subactivity {
+            position: relative;
+            top: 25%;
+
+            text-align: Center;
+            h1 {
+                @include titlefont;
+            }
+            p {
+                @include parafont;
+            }
+        }
+    }
+}
+
+article{ 
+	height: $sectionheight;
+	h1{@include titlefont;}
+	p{@include parafont;}
+}
+
+
+.svgcol{
+	color: $baseColor;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
